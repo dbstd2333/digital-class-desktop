@@ -17,7 +17,7 @@
         "all": true,
         "request": true,
         "scope": [
-          "http://127.0.0.1:19888/*"
+          "https://class.dabaostudio.xyz/*"
         ]
       }
     },
@@ -36,7 +36,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "std.digitalclass.db2333",
       "longDescription": "",
       "macOS": {
         "entitlements": null,

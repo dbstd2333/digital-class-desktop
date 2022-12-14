@@ -158,8 +158,8 @@
             </div>
         </a-spin>
         <div class="zhiri">
-            今日值日：{{gbv.zhiri}}<br>
-            清洁小组：{{gbv.cleang}}
+            今日值日：{{ gbv.zhiri }}<br>
+            清洁小组：{{ gbv.cleang }}
         </div>
         <div class="butt">
             <a-button @click="tomorrow">查看明天课表</a-button>
@@ -186,7 +186,7 @@ export default {
         tomorrow() {
             console.log("flush")
             this.loading = true
-            http.fetch(this.gbv.durl+'/api/kebiaoget', {
+            http.fetch('https://class.dabaostudio.xyz/api/kebiaoget', {
                 headers: { 'Content-Type': 'application/json' },
                 method: 'POST',
                 body: http.Body.json({
@@ -238,7 +238,7 @@ export default {
         },
         flush() {
             console.log("flush")
-            http.fetch(this.gbv.durl+'/api/kebiaoget', {
+            http.fetch('https://class.dabaostudio.xyz/api/kebiaoget', {
                 headers: { 'Content-Type': 'application/json' },
                 method: 'POST',
                 body: http.Body.json({
@@ -287,7 +287,7 @@ export default {
         console.log("beforeCreate")
         const mode = ref('left');
         this.loading = true
-        http.fetch('http://127.0.0.1:19888/api/kebiaoget', {
+        http.fetch('https://class.dabaostudio.xyz/api/kebiaoget', {
             headers: { 'Content-Type': 'application/json' },
             method: 'POST',
             body: http.Body.json({
@@ -328,7 +328,6 @@ export default {
             this.loading = false
             return {
                 gbv,
-                loading
             }
         });
         console.log("beforeCreate end")

@@ -1,6 +1,5 @@
 const rejson = {
-durl: 'http://127.0.0.1:19888',
-  rel: "https://class.dabaostudio.xyz",
+  durl: "https://class.dabaostudio.xyz",
   zhiri: "",
   cleang: "",
   tomorrow: 0,

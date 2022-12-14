@@ -3,7 +3,7 @@
     <div data-tauri-drag-region>c</div>
     <HomePage />
     <div class="inf">
-      Version：0.2.0<br>
+      Version：0.3.0<br>
       Digital Class 由 Tarui 强力驱动<br>
       Design by db2333
     </div>
